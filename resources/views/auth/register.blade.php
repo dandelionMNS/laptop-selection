@@ -1,7 +1,10 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" action="{{ route('register') }}" class="w-full flex flex-col justify-center">
         @csrf
-
+        <div class="pb-6">
+            <h2 class="text-4xl">Create an account</h2>
+            <h4 class="text-lg pt-3">Enter your details below</h4>
+        </div>
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />

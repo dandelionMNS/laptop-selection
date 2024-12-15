@@ -20,7 +20,7 @@
     <div class="bg-gray-900 w-full h-8"></div>
     <header class="text-gray-800 grid grid-cols-2 items-center gap-2 py-3 lg:grid-cols-3 w-full">
         <div class="w-full flex justify-center">
-            <img src="{{asset('assets/images/logo.png')}}" >
+            <img src="{{ asset('assets/images/logo.png') }}">
         </div>
         <div class="flex h-full items-center lg:justify-center lg:col-start-2 text-gray-800">
             <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Home</a>
@@ -32,12 +32,12 @@
             <input type="text" class="border-0 bg-gray-200" placeholder="Search">
         </div>
     </header>
-    <main class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
 
+    <main class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
 
         <div class="flex">
             <a>
-                <img src='{{ asset('assets/images/bg-login.png') }}'>
+                <img src='{{ asset('assets/images/login-img.png') }}' style="max-height: 600px">
             </a>
             <div class="w-full flex item-center sm:max-w-md px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
@@ -45,6 +45,7 @@
         </div>
 
     </main>
+    <x-footer/>
 </body>
 
 </html>

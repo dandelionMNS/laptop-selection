@@ -15,11 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('brand');
             $table->string('model');
+            $table->string('img_url');
+            $table->string('url');
             $table->decimal('price', 8, 2);
             $table->text('desc');
             $table->unsignedBigInteger('company_id');
+            $table->unsignedBigInteger('course_id');
+
             
             $table->foreign('company_id')->references('id')->on('companies')->cascadeOnDelete();
+            $table->foreign('course_id')->references('id')->on('courses')->cascadeOnDelete();
             $table->timestamps();
         });
     }
