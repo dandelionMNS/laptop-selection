@@ -15,8 +15,8 @@ Route::get('/', function () {
 // Default routes
 Route::view('/default', 'about')->name('about');
 Route::view('/default-auth', 'about')->middleware(['auth', 'verified'])->name('about');
-Route::view('/contact', 'contact')->middleware(['auth', 'admin'])->name('contact');
-Route::view('/about', 'about')->middleware(['auth', 'admin'])->name('about');
+Route::view('/contact', 'contact')->middleware(['auth', 'verified'])->name('contact');
+Route::view('/about', 'about')->middleware(['auth', 'verified'])->name('about');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

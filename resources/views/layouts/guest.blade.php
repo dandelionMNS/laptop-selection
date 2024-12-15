@@ -23,14 +23,12 @@
             <img src="{{ asset('assets/images/logo.png') }}">
         </div>
         <div class="flex h-full items-center lg:justify-center lg:col-start-2 text-gray-800">
-            <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Home</a>
-            <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Contact</a>
-            <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">About</a>
-            <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Register</a>
-        </div>
-        <div class="flex justify-center w-full">
-            <input type="text" class="border-0 bg-gray-200" placeholder="Search">
-        </div>
+            <a href="{{route('dashboard')}}" class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Home</a>
+            <a href="{{route('contact')}}" class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Contact</a>
+            <a href="{{route('about')}}" class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">About</a>
+            <a href="{{route('register')}}" 
+                class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Register</a>
+       </div>
     </header>
 
     <main class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">

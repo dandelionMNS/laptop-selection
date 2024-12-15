@@ -50,10 +50,10 @@
         </div>
         <div class="flex lg:justify-center lg:col-start-2">
             <div class="flex h-full items-center lg:justify-center lg:col-start-2 text-gray-800">
-                <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Home</a>
-                <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Contact</a>
-                <a class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">About</a>
-                <a
+                <a href="{{route('dashboard')}}" class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Home</a>
+                <a href="{{route('contact')}}" class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Contact</a>
+                <a href="{{route('about')}}" class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">About</a>
+                <a href="{{route('register')}}" 
                     class="px-8 h-full flex items-center hover:cursor-pointer hover:bg-gray-100 duration-300">Register</a>
             </div>
         </div>
