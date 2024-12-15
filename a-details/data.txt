@@ -1,14 +1,10 @@
-
+ 
 INSERT INTO `companies` (`id`, `name`, `url`, `created_at`, `updated_at`) VALUES
 (1, 'Dell', 'https://www.dell.com/en-my', NULL, NULL),
 (2, 'HP', 'https://www.hp.com/us-en/home.html', NULL, NULL),
-(3, 'Asus', 'https://www.asus.com/', NULL, NULL);
-
-
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `user_type`, `remember_token`, `created_at`, `updated_at`, `course_id`) VALUES
-(1, 'admin', 'admin@gmail.com', NULL, '$2y$12$HBP9sZCsJpJFOmkPkgNB8u.nsc/gBi51rWRduamTefkuVaHJ03fD6', 'admin', NULL, '2024-12-12 14:43:15', '2024-12-12 14:43:15', NULL);
-COMMIT;
+(3, 'Asus', 'https://www.asus.com/', NULL, NULL),
+(4, 'Acer', 'https://www.acer.com/us-en', NULL, NULL);
+ 
 
 INSERT INTO `courses` (`id`, `code`, `name`, `created_at`, `updated_at`) VALUES
 (1, 'it', 'Information Technology', NULL, NULL),
@@ -23,9 +19,11 @@ INSERT INTO `courses` (`id`, `code`, `name`, `created_at`, `updated_at`) VALUES
 (10, 'la', 'Liberal Arts', NULL, NULL),
 (11, 'acc', 'Accounting', NULL, NULL),
 (12, 'oth', 'Others', NULL, NULL);
-
-
-INSERT INTO `laptops` (`id`, `brand`, `model`, `img_url`,`url`, `price`, `desc`, `company_id`, `course_id`, `created_at`, `updated_at`) VALUES
-(1, 'Asus', 'Vivobook 14', 'https://down-my.img.susercontent.com/file/my-11134207-7r98q-lqbe3fs37pku32.webp', 'https://shopee.com.my/Asus-Vivobook-14-A1405z-i5-12500H-16GB-DDR4-512GB-Iris-X%E1%B5%89-14-WUXGA-W11-(A1405Z-ALY235WSM-A1405Z-ALY236WSM)-i.475306177.18675078134?sp_atk=e9f59376-7c47-4ed6-9d15-826108ca8592&xptdk=e9f59376-7c47-4ed6-9d15-826108ca8592
-', 2384.00, '\nA1405Z-ALY235WSM BLACK\n\nA1405Z-ALY236WSM SILVER\n\nOffice Home and Student included \n14.0-inch WUXGA (1920 x 1200) 16:10 aspect ratio/60Hz refresh rate/300nits/45% NTSC color gamut/Anti-glare display\nIntel® Core™ i5-12500H Processor 2.5 GHz (18M Cache, up to 4.5 GHz, 4P+8E cores)\nIntel Iris Xᵉ Graphics\nDDR4 16GB ( 8GB DDR4 on board + 8GB DDR4 SO-DIMM ) max : 16gb\n512GB M.2 NVMe™ PCIe® 3.0 SSD\nWi-Fi 6E(802.11ax) (Dual band) 1*1 + Bluetooth® 5.3 Wireless Card \n720p HD camera  With privacy shutter\nFingerPrint support \n\ni/o ports :\n1x USB 2.0 Type-A\n1x USB 3.2 Gen 1 Type-C\n2x USB 3.2 Gen 1 Type-A\n1x HDMI 1.4\n1x Headphone out\n1x DC-in\n\nAudio :\nSonicMaster\nBuilt-in speaker\nBuilt-in array microphone\nø4.5, 65W AC Adapter, Output: 19V DC, 3.42A, 65W, Input: 100~240V AC 50/60Hz universal\n42WHrs, 3S1P, 3-cell Li-ion\nBacklit Chiclet Keyboard\nBackpack included ', 3, 1, NULL, NULL);
-
+ 
+INSERT INTO `laptops` (`id`, `brand`, `model`, `img_url`, `url`, `price`, `desc`, `company_id`, `course_id`, `created_at`, `updated_at`) VALUES
+(1, 'Asus', 'Vivobook 14', 'https://down-my.img.susercontent.com/file/my-11134207-7r98q-lqbe3fs37pku32.webp', 'https://shopee.com.my/Asus-Vivobook-14-A1405z-i5-12500H-16GB-DDR4-512GB-Iris-X%E1%B5%89-14-WUXGA-W11-(A1405Z-ALY235WSM-A1405Z-ALY236WSM)-i.475306177.18675078134?sp_atk=e9f59376-7c47-4ed6-9d15-826108ca8592&xptdk=e9f59376-7c47-4ed6-9d15-826108ca8592\r\n', 2384.00, 'A1405Z-ALY235WSM BLACK\n\nA1405Z-ALY236WSM SILVER\n\nOffice Home and Student included \n14.0-inch WUXGA (1920 x 1200) 16:10 aspect ratio/60Hz refresh rate/300nits/45% NTSC color gamut/Anti-glare display\nIntel® Core™ i5-12500H Processor 2.5 GHz (18M Cache, up to 4.5 GHz, 4P+8E cores)\nIntel Iris Xᵉ Graphics\nDDR4 16GB ( 8GB DDR4 on board + 8GB DDR4 SO-DIMM ) max : 16gb\n512GB M.2 NVMe™ PCIe® 3.0 SSD\nWi-Fi 6E(802.11ax) (Dual band) 1*1 + Bluetooth® 5.3 Wireless Card \n720p HD camera  With privacy shutter\nFingerPrint support \n\ni/o ports :\n1x USB 2.0 Type-A\n1x USB 3.2 Gen 1 Type-C\n2x USB 3.2 Gen 1 Type-A\n1x HDMI 1.4\n1x Headphone out\n1x DC-in\n\nAudio :\nSonicMaster\nBuilt-in speaker\nBuilt-in array microphone\nø4.5, 65W AC Adapter, Output: 19V DC, 3.42A, 65W, Input: 100~240V AC 50/60Hz universal\n42WHrs, 3S1P, 3-cell Li-ion\nBacklit Chiclet Keyboard\nBackpack included ', 3, 1, NULL, NULL),
+(3, 'Acer', 'Aspire Lite 16', 'https://down-my.img.susercontent.com/file/my-11134207-7rase-m26bvsasu6ylae.webp', 'https://shopee.com.my/Acer-Aspire-Lite-16-AL16-52P-59PP-16-WUXGA-Laptop-Steel-Grey-(-i5-1334U-16GB-512GB-SSD-Intel-W11-HS-M365-)-i.213234583.6442545676?sp_atk=bb8518d5-2b4a-4857-9724-5fbdd1e6184a&xptdk=bb8518d5-2b4a-4857-9724-5fbdd1e6184a', 2374.00, '======================\r\nHighlights\r\n======================\r\n\r\nIntel® Core™ i5-1334U processor\r\n16 GB DDR5 system memory (upgradable to 32GB DDR5)\r\n512GB PCIe NVMe Gen4 SSD\r\nIntel® UHD Graphics\r\n16\" IPS technology, WUXGA 1920 x 1200, Acer ComfyView™ LED-backlit TFT LCD, 16:10 aspect ratio\r\n\r\nWindows 11 Home\r\n2 Year Acer Local Warranty with 1st Year ITW\r\nPre-installed MS Office Home & Student 2021 + Microsoft 365 Basic\r\n\r\n\r\n======================\r\nSpecification\r\n======================\r\n[Product Features]: Pre-installed MS Office Home & Student 2021 + Microsoft 365 Basic\r\n[CPU / Processor]: Intel® Core™ i5-1334U processor\r\n[Memory]: 16 GB DDR5 system memory (upgradable to 32GB DDR5)\r\n[Memory Slot]: total 2 slots\r\n[Storage]: 512GB PCIe NVMe Gen4 SSD\r\n[Storage Capability]: NA\r\n[Graphic Card]: Intel® UHD Graphics\r\n[Display Screen / Design / Resolution]: 16.0\" display with IPS (In-Plane Switching) technology, WUXGA 1920 x 1200, Acer ComfyView™ LED-backlit TFT LCD\r\n16:10 aspect ratio\r\nWide viewing angle up to 170 degrees\r\nMercury free, environment friendly\r\n[Camera]: FHD Camera\r\n[Operation System]: Windows 11 Home\r\n[Optical Drive]: -\r\n[Audio & Video]: Speakers\r\n[Network / Connectivity Technology]: Intel® Wireless Wi-Fi 6 AX201\r\n• 802.11a/b/g/n/acR2+ax wireless LAN\r\n• Dual Band (2.4 GHz and 5 GHz)\r\n• 2x2 MU-MIMO technology\r\n• Supports Bluetooth® 5.1\r\n\r\n[Keyboard Feature]: Non-Backlit Keyboard\r\n[Sensors]: No FingerPrint\r\n[Interface]: 1 x USB Type-C™ port supporting:\r\n• USB 3.2 Gen 2 (up to 10 Gbps)\r\n• DisplayPort over USB-C\r\n• USB charging 5/9/12/15/20 V; 3.25 A\r\n3 x USB Standard-A ports, supporting:\r\n• USB 3.2 Gen 1\r\n1 x HDMI® 1.4 port with HDCP support\r\n1 x microSD card slot\r\n1 x 3.\r\n\r\n[Battery / Power Supply]: 2-cell battery pack\r\nType-C 65W PD AC Adapter\r\n[Dimensions]: 357.6 (W) x 247 (D) x 18.9 (H) mm\r\n[Weight]: 1.7kg\r\n[Remark]: 2 Year Acer Local Warranty with 1st Year International Traveller Warranty', 4, 1, NULL, NULL);
+ 
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `user_type`, `remember_token`, `created_at`, `updated_at`, `course_id`) VALUES
+(1, 'admin', 'admin@gmail.com', NULL, '$2y$12$HBP9sZCsJpJFOmkPkgNB8u.nsc/gBi51rWRduamTefkuVaHJ03fD6', 'admin', NULL, '2024-12-12 06:43:15', '2024-12-12 06:43:15', NULL);
+COMMIT;
